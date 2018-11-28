@@ -1,0 +1,59 @@
+// set a property that holds a random colour for our style
+
+// tslint:disable-next-line:member-ordering
+  public randomcolor = this.getRandomColor();
+
+// declare the fontsize and background colour properties
+// public font_size='20px';
+// public background_color="grey";
+
+// function to getrandomcolours - a random generator function
+
+
+  public getRandomColor() {
+  const letters = '0123456789ABCDEF'.split('');
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+   color += letters[Math.floor(Math.random() * 16)];
+ }
+
+ return color;
+ }
+
+// function to set a new random color
+setColor() {
+  this.randomcolor = this.getRandomColor();
+
+  }
+
+  /*
+ // For the icon
+// tslint:disable-next-line:member-ordering
+  private _randomiconcolor = this.getRandomIconColor();
+  public get randomiconcolor() {
+    return this._randomiconcolor;
+  }
+  public set randomiconcolor(value) {
+    this._randomiconcolor = value;
+  }
+
+// declare the fontsize and background colour properties
+// public font_size='20px';
+// public background_color="grey";
+
+ public getRandomIconColor() {
+  const letters = '0123456789ABCDEF'.split('');
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+   color += letters[Math.floor(Math.random() * 16)];
+ }
+
+ return color;
+
+}
+
+// function to set a new random  color
+setIconColor() {
+  this.randomiconcolor = this.getRandomIconColor();
+
+    }*/

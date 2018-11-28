@@ -1,0 +1,45 @@
+<nav class="navbar is-primary">
+      <div class="container">
+        <div class="navbar-brand nav-left">
+          <a routerLink="/" class="nav-item">MyCompany</a>
+            Kyle D Wills
+          </a>
+
+          
+          
+            <span class="navbar-burger nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active': toggleNav }">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+
+  
+        
+        <div class="nav-right nav-menu" [ngClass]="{'is-active': toggleNav }">
+          <div class="navbar-end">
+            <a routerLink="/" class="nav-item r-item">Home</a>
+            <a class="nav-item r-item">About</a>
+            <a class="nav-item r-item">Features</a>
+            <a routerLink="/faq" class="nav-item r-item">FAQ</a>
+
+          </div>
+
+          <div class="navbar-item join">
+            <div class="field is-grouped">
+              <p class="control">
+                <!--<a class="bd-tw-button button is-dark is-outlined">-->
+                <a class="button is-primary is-outlined">
+                  <span class="icon">
+                    <i class="fa fa-download"></i>
+                  </span>
+                  <span>
+                    Join Now
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>

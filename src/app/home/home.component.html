@@ -1,0 +1,73 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Welcome to my Bulma and Angular built page</h1>
+      <div class="is-two-thirds column is-paddingless">
+        <h2 class="subtitle is-4">"Oh, God", he thought, "what a strenuous career it is that I've chosen! Travelling day in and day out.</h2>
+      </div>
+      <a class="button is-large is-primary" id="learn">Learn more about us!</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns pd is-desktop">
+      <div class="column is-1 has-text-centered">
+        <i class="fa fa-cog fa-5x" ></i>
+      </div>
+      <div class="column is-one-third-desktop" >
+        <p class="title" [style.color]="randomcolor"><strong>A wonderful serenity has taken possession of my work.</strong></p> 
+      </div>
+      <div class="column">
+        <p> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <a class="button is-large is-dark iconbtn"(click)="setColor()" >Change Icon Colour</a>
+      <a class="button is-large is-dark textbtn"(click)="setColor()">Change Text Colour</a>
+    </div>
+
+    <!--<div class="column is-one-third-desktop" >
+      <p class="title" [ngStyle]="{'color' : getRandomColor()}"><strong>A wonderful serenity has taken possession of my work.</strong></p> 
+    </div>
+    <div class="column">
+      <p> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <a class="button is-large is-dark iconbtn" [(ngModel)]="color" >Change Icon Colour</a>
+    <a class="button is-large is-dark textbtn" [(ngModel)]="color">Change Text Colour</a>
+  </div>-->
+
+
+  <div class="columns pd">
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+         <p class="title"> Separated they live in Bookmarks grove right at the coast of the Semantics... </p>
+         <p class="subtitle"> -Kyle Wills</p> 
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+         <p class="title"> Far far away, behind the word mountains, far from the countries... </p>
+         <p class="subtitle"> -Toby Wills</p> 
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+         <p class="title"> She packed her seven versalia, put her initial into the belt and made herself on the way... </p>
+         <p class="subtitle"> -Jess Wills</p> 
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>

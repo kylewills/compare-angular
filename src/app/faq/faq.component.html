@@ -1,0 +1,26 @@
+<div class="faq">
+  <div class="container">
+    <section class="section">
+      <h1 class="title">Frequently Asked Questions</h1>
+      <h2 class="subtitle">On her way she met a copy.</h2>
+
+        
+      <div class="columns pd">
+        
+        <!-- the sections that get repeated from our data library
+          using *ngFor to input into the title and answer classes...
+          Change "let faq of faqs" to the code below if you want to
+          slice the data array to 12, using angular...
+         -->
+        <div class="column is-one-third" *ngFor="let faq of ( faqs ? faqs.slice(0,9): [])">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">{{ faq.title }}</p>
+              <p class="answer">{{ faq.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
